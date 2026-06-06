@@ -3,7 +3,7 @@
 ## Deskripsi Tugas
 Tugas ini membahas Class & Object di Java:
 1. Teori tentang `class` dan `object`.
-2. Jenis-jenis method di Java seperti getter, setter, constructor, dan static method.
+2. Jenis-jenis method di Java seperti getter, setter, constructor, static method, void method, dan return method.
 3. Analisis kode class `Komputer`.
 4. Perbaikan kode class `HandPhone` yang awalnya memiliki banyak kesalahan sintaks.
 
@@ -20,6 +20,8 @@ Tugas ini membahas Class & Object di Java:
 - `object` adalah instance nyata dari class yang berisi nilai konkret untuk atribut tersebut.
 
 ### SOAL 2: Jenis method di Java
+- Void Method: method yang tidak mengembalikan nilai, misalnya `setDataKomputer(...)`.
+- Return Method: method yang mengembalikan nilai, misalnya `getMerk()`.
 - Accessor / Getter: membaca nilai field, misalnya `getMerk()`.
 - Mutator / Setter: mengubah nilai field, misalnya `setDataKomputer(...)`.
 - Constructor: method khusus untuk inisialisasi objek, nama sama dengan nama class.
@@ -57,11 +59,11 @@ Jika kamu butuh link untuk dikumpulkan, berikut langkahnya:
 1. Buat repository baru di GitHub (misalnya `tugas-pbo-tugas2`).
 2. Tambahkan remote origin di folder lokal:
    ```bash
-   cd /home/swift/PBO/tugas2
-   git remote add origin https://github.com/USERNAME/tugas-pbo-tugas2.git
-   git branch -M main
-   git push -u origin main
-   ```
+cd /home/swift/PBO/tugas2
+git remote add origin https://github.com/USERNAME/tugas-pbo-tugas2.git
+git branch -M main
+git push -u origin main
+```
 3. Salin URL repository GitHub yang muncul di browser.
 
 > Saat ini repository sudah dibuat secara lokal di `PBO/tugas2` dan sudah memiliki commit awal. Kamu hanya perlu melakukan push ke GitHub.
