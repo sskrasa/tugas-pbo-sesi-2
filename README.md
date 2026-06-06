@@ -11,7 +11,7 @@ Tugas ini membahas Class & Object di Java:
 - `HandPhone.java` - kelas `HandPhone` yang telah diperbaiki.
 - `Komputer.java` - kelas `Komputer` dengan field, setter, dan getter.
 - `Main.java` - kelas utama untuk mengeksekusi kedua kelas tersebut.
-- `build.sh` - skrip untuk mengkompilasi semua file Java.
+- `build.sh` - skrip bantuan untuk mengkompilasi semua file Java.
 - `.gitignore` - agar file kelas hasil kompilasi tidak masuk Git.
 
 ## Jawaban singkat tugas
@@ -22,9 +22,9 @@ Tugas ini membahas Class & Object di Java:
 ### SOAL 2: Jenis method di Java
 - Void Method: method yang tidak mengembalikan nilai, misalnya `setDataKomputer(...)`.
 - Return Method: method yang mengembalikan nilai, misalnya `getMerk()`.
-- Accessor / Getter: membaca nilai field, misalnya `getMerk()`.
-- Mutator / Setter: mengubah nilai field, misalnya `setDataKomputer(...)`.
-- Constructor: method khusus untuk inisialisasi objek, nama sama dengan nama class.
+- Accessor / Getter: method untuk membaca nilai field, misalnya `getMerk()`.
+- Mutator / Setter: method untuk mengubah nilai field, misalnya `setDataKomputer(...)`.
+- Constructor: method khusus untuk inisialisasi objek dengan nama sama seperti class.
 - Static Method: method milik class, bukan object, contohnya `main`.
 - Main Method: entry point program Java `public static void main(String[] args)`.
 
@@ -46,24 +46,9 @@ Kesalahan utama yang diperbaiki:
 - `public static void main(String[] args)` dibuat benar.
 - Menambahkan `System.out.println(...)` untuk menampilkan output.
 
-## Cara compile dan jalankan
-```bash
-cd /home/swift/PBO/tugas2
-bash build.sh
-java Main
-```
-
-## Cara membuat link GitHub
-Jika kamu butuh link untuk dikumpulkan, berikut langkahnya:
-
-1. Buat repository baru di GitHub (misalnya `tugas-pbo-tugas2`).
-2. Tambahkan remote origin di folder lokal:
-   ```bash
-cd /home/swift/PBO/tugas2
-git remote add origin https://github.com/USERNAME/tugas-pbo-tugas2.git
-git branch -M main
-git push -u origin main
-```
-3. Salin URL repository GitHub yang muncul di browser.
-
-> Saat ini repository sudah dibuat secara lokal di `PBO/tugas2` dan sudah memiliki commit awal. Kamu hanya perlu melakukan push ke GitHub.
+## Catatan
+- Tugas ini fokus pada teori `class` dan `object`, analisis kode `Komputer`, serta perbaikan kode `HandPhone`.
+- File utama yang dikumpulkan adalah `HandPhone.java`, `Komputer.java`, `Main.java`, `README.md`, `build.sh`, dan `.gitignore`.
+- `build.sh` adalah skrip bantuan untuk kompilasi Java.
+- `.gitignore` digunakan supaya file hasil kompilasi seperti `*.class` tidak masuk ke repository.
+- File hasil kompilasi (`*.class`) dan direktori `__pycache__/` tidak perlu dikumpulkan.
